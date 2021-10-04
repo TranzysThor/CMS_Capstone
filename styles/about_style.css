@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 12rem;
+}
+
+.div__items {
+    list-style: none;
+}
+
+.div__items li {
+    display: inline-block;
+    padding: 0rem 1.75rem;
+}
+
+#img__author {
+    border-radius: 0rem 10rem 0rem 10rem;
+    box-shadow: 1rem 1rem 1.5rem #EDF0F1;
+}
