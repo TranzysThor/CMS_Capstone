@@ -10,6 +10,15 @@ body {
     background-color: #4D458C;
 }
 
+.span__def {
+    transition: 0.3s ease;
+    text-decoration: underline;
+}
+
+.span__def:hover {
+    color: wheat;
+}
+
 #scroll {
     position: fixed;
     right: 10px;
@@ -24,6 +33,7 @@ body {
     -moz-border-radius: 60px;
     border-radius: 60px
 }
+
 #scroll span {
     position: absolute;
     top: 50%;
@@ -35,8 +45,16 @@ body {
     border: 8px solid transparent;
     border-bottom-color: #EDF0F1;
 }
+
+#scroll {
+    transition: 0.3s ease;
+}
+
+#mtkh:hover, #mtkh_img:hover {
+    cursor: pointer;
+}
+
 #scroll:hover {
-    transition: 0.3s ease 0s;
     background-color: #24257A;
     opacity: 1;
     filter: "alpha(opacity=100)";
@@ -133,7 +151,10 @@ header {
     margin-left: auto;
 }
 
+.img__content { transition: 0.5s ease;}
+
 .img__content:hover {
+    transition: 0.5s ease;
     transform: scale(1.5);
 }
 
