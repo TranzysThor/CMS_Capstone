@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Курсовой Проект</title>
+        <script src="scripts/slider_script.js"></script>
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
@@ -19,20 +20,32 @@
             <a href="https://github.com/TranzysThor" target="_blank" class="cta"><img src="images/gh.png" width="45" height="45" alt="GitHub"></a>
         </header>
         <h1>Главная</h1>
-        <div class="container">
-            <a href="theory.html"><img src="images/pic_3.png" alt="Picture 3" class="img__links" width="100%"></a>
-            <h2 class="img__header">Теоретические Сведения</h2>
+        <div class="slideshow__container">
+            <div class="div__slides fade">
+                <img src="images/pic_3.png" alt="Picture 3" class="img__links" style="width: 78%;">
+                <a href="theory.html" class="div__slide_text">Теоретические Сведения</a>
+            </div>
+            <div class="div__slides fade">
+                <img src="images/pic_5.png" alt="Picture 5" class="img__links" style="width: 88%;">
+                <a href="#" class="div__slide_text">Структура Установки</a>
+            </div>
+            <div class="div__slides fade">
+                <img src="images/pic_3.png" alt="Picture 3" class="img__links" style="width: 78%;">
+                <a href="#" class="div__slide_text">Симулятор Установки</a>
+            </div>
+            <div class="div__slides fade">
+                <img src="images/author.jpg" alt="Author" class="img__links" style="width: 33%;">
+                <a href="about_author.html" class="div__slide_text">Об Авторе</a>
+            </div>
+            <br>
+            <a class="a__prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="a__next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="container">
-            <a href="#"><img src="images/pic_5.png" alt="Picture 5" class="img__links" width="100%"></a>
-            <h2 class="img__header">Структура Установки</h2>
-        </div>
-        <div class="container">
-            <a href="#"><img src="images/pic_5.png" alt="Picture 5" class="img__links" width="100%"></a>
-            <h2 class="img__header">Симулятор Установки</h2>
-        </div><div class="container">
-            <a href="about_author.html"><img src="images/author.jpg" alt="Author" class="img__links" width="30%"></a>
-            <h2 class="img__header">Об Авторе</h2>
+        <div style="text-align:center">
+            <span class="span__dot" onclick="currentSlide(1)"></span>
+            <span class="span__dot" onclick="currentSlide(2)"></span>
+            <span class="span__dot" onclick="currentSlide(3)"></span>
+            <span class="span__dot" onclick="currentSlide(4)"></span>
         </div>
         <footer>
             <a href="https://it.belstu.by/" target="_blank"><img src="https://it.belstu.by/wp-content/uploads/2019/05/LogoFIT-1-e1557999163520.png" alt="logo" width="45" height="45"></a>

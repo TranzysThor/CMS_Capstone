@@ -10,6 +10,86 @@ body {
     background-color: #4D458C;
 }
 
+.slideshow__container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.div__slides:first-child {
+    display: block;
+}
+
+.div__slides {
+    display: none;
+}
+
+.a__prev, .a__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.5%;
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    transition: 0.6s ease;
+    border-radius: 0 5% 5% 0;
+    user-select: none;
+}
+
+.a__next {
+    right: 0;
+    border-radius: 5% 0 0 5%;
+}
+
+.a__prev:hover, .a__next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.div__slide_text {
+    color: #4D458C;
+    font-size: 100%;
+    padding: 1% 1.25%;
+    position: absolute;
+    bottom: 48%;
+    width: 100%;
+    text-align: center;
+}
+
+.span__dot {
+    cursor: pointer;
+    height: 15px;
+    width: 0.789%;
+    margin: 0 0.1%;
+    background-color: #EDF0F1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .span__dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 .span__def {
     transition: 0.3s ease;
     text-decoration: underline;
