@@ -10,7 +10,7 @@ body {
     background-color: #4D458C;
 }
 
-iframe {
+iframe, video {
     text-align: center;
     display: block;
     margin-right: auto;
