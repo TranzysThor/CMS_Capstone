@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <title>Курсовой Проект</title>
         <link rel="stylesheet" href="styles/style.css">
+        <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		/>
         <script asyncY src="scripts/jquery.min.js"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -122,6 +126,20 @@
                 </p>
             </li>
         </ul>
+        <section class="dialog">
+            <div class="dialog__window">
+            <h4 class="dialog__header">База знаний</h4>
+            <div class="dialog__body" id="dialog__messanger"></div>
+            <form class="dialog__submit" id="dialog__form" onsubmit="return false">
+                <input class="dialog__input" id="dialog__input" type="text" name="question" autocomplete="off"
+                placeholder="Ваш вопрос" />
+                <button class="dialog__button" id="dialog__button" type="button">
+                <i class="fas fa-microphone"></i>
+                </button>
+            </form>
+            </div>
+        </section>
+        <script src="scripts/dialog.js"></script>
         <footer>
             <a href="https://it.belstu.by/" target="_blank"><img src="https://it.belstu.by/wp-content/uploads/2019/05/LogoFIT-1-e1557999163520.png" alt="logo" width="45" height="45"></a>
             <h3>&#169Акулевич Максим Дмитриевич</h3>

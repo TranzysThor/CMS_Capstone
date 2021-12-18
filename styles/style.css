@@ -289,3 +289,113 @@ header {
     color: #4D458C;
 }
 
+.dialog {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.dialog__window {
+    overflow: hidden;
+}
+
+.dialog__header {
+    padding: 15px;
+    text-align: center;
+    background-color: #24252A;
+    color: #EDF0F1;
+}
+
+.dialog__body {
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: auto;
+    word-wrap: break-word;
+    scroll-behavior: smooth;
+}
+
+.dialog__submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.dialog__input {
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #EDF0F1;
+}
+
+.dialog__input::-webkit-input-placeholder {
+    color: #4D458C;
+}
+
+.dialog__input:-ms-input-placeholder {
+    color: #4D458C;
+}
+
+.dialog__input::-ms-input-placeholder {
+    color: #4D458C;
+}
+
+.dialog__input::placeholder {
+    color: #4D458C;
+}
+
+.dialog__button {
+    padding: 0 30px;
+    background-color: #24252A;
+    color: wheat;
+    font-size: 2rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.dialog__button-hover {
+    padding: 0 40px;
+    background-color: wheat;
+    color: #24252A;
+    font-size: 2.5rem;
+}
+
+.dialog__button-listen {
+    padding: 0 40px !important;
+    background-color: #4D458C !important;
+    color: lightblue !important;
+    font-size: 2.5rem !important;
+}
+
+.dialog__message {
+    margin: 5px;
+    padding: 10px;
+    max-width: 60%;
+    text-align: justify;
+}
+
+.dialog__message.question {
+    margin-left: auto;
+    background-color: #EDF0F1;
+    color: #4D458C;
+}
+
+.dialog__message.answer {
+    margin-right: auto;
+    background-color: wheat;
+}
+
+.dialog__image {
+    margin: 5px;
+    margin-right: auto;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    width: 80%;
+}
