@@ -102,7 +102,7 @@ video {
     to {opacity: 1}
 }
 
-.span__def {
+/.span__def {
     transition: 0.3s ease;
     text-decoration: underline;
 }
@@ -236,14 +236,19 @@ header {
     filter: blur(0.3rem);
 }
 
-.img__content, .img__links {
+.img__content, .img__links, .img__simulator {
     text-align: center;
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
-.img__content { transition: 0.5s ease;}
+.img__content, .img__simulator { transition: 0.5s ease;}
+
+.img__simulator:hover {
+    transition: 0.5s ease;
+    transform: scale(1.2);
+}
 
 .img__content:hover {
     transition: 0.5s ease;
@@ -287,6 +292,10 @@ header {
 .nav__links li a:hover {
     transition: all 0.3s ease 0s;
     color: #4D458C;
+}
+
+#unity-container {
+    margin-top: 5%;
 }
 
 .dialog {
